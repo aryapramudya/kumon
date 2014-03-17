@@ -68,6 +68,20 @@
 ),
 ));
 
+// ARYA PRAMUDYA //
+$this->widget('zii.widgets.jui.CJuiDatePicker',array(
+	'model'=>$model, //Model object
+	'language'=> 'en-GB',
+	'attribute'=>'awal_masuk', //attribute name
+	// 'mode'=>'datetime', //use "time","date" or "datetime" (default)
+	'options'=>array(
+	 'dateFormat'=>'yy-mm-dd', // save to db format
+	),
+	'htmlOptions'=>array(
+	  'placeHolder'=>'Input Awal Masuk')// jquery plugin options
+					));
+// ARYA PRAMUDYA //
+
 ?>
 <?php echo $form->labelEx($model,'awal_masuk'); ?>
 </div>
